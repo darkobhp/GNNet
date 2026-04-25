@@ -46,20 +46,13 @@ export function LeadershipMobileCard({
   const [isExpanded, setIsExpanded] = useState(false);
   const preferredImage =
     MOBILE_LEADERSHIP_HEADSHOTS[member.name] ?? member.image;
-  const mobileImage = `${preferredImage}?v=lead-mobile-2`;
+  const mobileImage = `${preferredImage}?v=lead-mobile-3`;
   const previewBio = getBioPreview(member.bio);
   const hasMoreBio = previewBio !== member.bio.trim();
 
   return (
-    <article className="surface overflow-hidden">
-      <div
-        role="img"
-        aria-label={`${member.photoType === "placeholder" ? "Profile placeholder" : "Headshot"} for ${member.name}`}
-        className="h-72 w-full bg-slate-100 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url("${mobileImage}")` }}
-      />
-
-      <div className="space-y-3 p-5">
+    <article className="surface p-5">
+      <div className="space-y-3">
         <div className="space-y-1">
           <h3 className="text-xl font-semibold text-slate-900">
             {member.name}
@@ -80,9 +73,22 @@ export function LeadershipMobileCard({
             className="inline-flex items-center gap-2 text-sm font-medium text-navy-700"
             aria-expanded={isExpanded}
           >
-            <span>{isExpanded ? "Read less" : "Read full bio"}</span>
+            <span>{isExpanded ? "See less" : "See more"}</span>
             <span aria-hidden="true">{isExpanded ? "↑" : "↓"}</span>
           </button>
+        ) : null}
+
+        {isExpanded ? (
+          <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={mobileImage}
+              alt={`${member.photoType === "placeholder" ? "Profile placeholder" : "Headshot"} for ${member.name}`}
+              loading="lazy"
+              decoding="async"
+              className="block h-72 w-full object-cover"
+            />
+          </div>
         ) : null}
       </div>
     </article>
