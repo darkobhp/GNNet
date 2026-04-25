@@ -48,18 +48,13 @@ export function ConferenceCard({ conference }: ConferenceCardProps) {
               </li>
             ))}
           </ul>
-          {conference.presentations.length > previewPresentations.length ? (
-            <p className="mt-3 text-sm text-slate-500">
-              Open the conference page to view the remaining abstracts.
-            </p>
-          ) : null}
         </div>
 
         <Link
           href={`/conferences/${conference.slug}`}
           className="inline-flex items-center text-sm font-medium text-navy-700 hover:text-navy-900"
         >
-          Open conference page
+          See more
           <span className="ml-2" aria-hidden="true">
             →
           </span>
