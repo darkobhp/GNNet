@@ -180,7 +180,10 @@ export default function HomePage() {
                       delay={(index % 4) * 80}
                       className="h-full"
                     >
-                      <TeamCard member={member} />
+                      <TeamCard
+                        member={member}
+                        eagerImage={group.name === "Leadership"}
+                      />
                     </Reveal>
                   ))}
                 </div>
