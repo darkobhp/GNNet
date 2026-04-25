@@ -1,6 +1,6 @@
 import { ParallaxPanel } from "@/components/ParallaxPanel";
 import { Reveal } from "@/components/Reveal";
-import { conferenceEvents, publications, registries } from "@/data/site";
+import { conferenceEvents, publications } from "@/data/site";
 
 type HeroProps = {
   heading: string;
@@ -16,7 +16,6 @@ export function Hero({ heading, heroText, bodyCopy }: HeroProps) {
 
   const highlights = [
     { label: "Selected Publications", value: `${publications.length}+` },
-    { label: "Active Registries", value: `${registries.length}` },
     {
       label: "Conference Presentations",
       value: `${totalConferencePresentations}+`
