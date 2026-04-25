@@ -174,42 +174,26 @@ export default function HomePage() {
                   <div className="h-px flex-1 bg-slate-200" />
                 </div>
 
-                {group.name === "Leadership" ? (
-                  <>
-                    <div className="space-y-5 md:hidden">
-                      {group.members.map((member) => (
-                        <LeadershipMobileCard
-                          key={member.name}
-                          member={member}
-                        />
-                      ))}
-                    </div>
+                <div className="space-y-5 md:hidden">
+                  {group.members.map((member) => (
+                    <LeadershipMobileCard
+                      key={member.name}
+                      member={member}
+                    />
+                  ))}
+                </div>
 
-                    <div className="hidden gap-6 md:grid md:grid-cols-2 xl:grid-cols-4">
-                      {group.members.map((member, index) => (
-                        <Reveal
-                          key={member.name}
-                          delay={(index % 4) * 80}
-                          className="h-full"
-                        >
-                          <TeamCard member={member} />
-                        </Reveal>
-                      ))}
-                    </div>
-                  </>
-                ) : (
-                  <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-                    {group.members.map((member, index) => (
-                      <Reveal
-                        key={member.name}
-                        delay={(index % 4) * 80}
-                        className="h-full"
-                      >
-                        <TeamCard member={member} />
-                      </Reveal>
-                    ))}
-                  </div>
-                )}
+                <div className="hidden gap-6 md:grid md:grid-cols-2 xl:grid-cols-4">
+                  {group.members.map((member, index) => (
+                    <Reveal
+                      key={member.name}
+                      delay={(index % 4) * 80}
+                      className="h-full"
+                    >
+                      <TeamCard member={member} />
+                    </Reveal>
+                  ))}
+                </div>
               </Reveal>
             ))}
           </div>
