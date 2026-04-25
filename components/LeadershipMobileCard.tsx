@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { TeamMember } from "@/data/site";
 
 type LeadershipMobileCardProps = {
@@ -8,6 +8,17 @@ type LeadershipMobileCardProps = {
 };
 
 const SENTENCE_ABBREVIATIONS = ["Dr.", "Mr.", "Mrs.", "Ms.", "Prof."];
+const MOBILE_LEADERSHIP_HEADSHOTS: Record<string, string> = {
+  "Bernice Limann": "/images/Headshots/Bernice.jpg",
+  "Lois Agbemavi-Kudufia": "/images/Headshots/Lois.jpg",
+  "Kwadwo Darko": "/images/Headshots/Kwadwo.jpg",
+  "Michael Yankey": "/images/Headshots/Yankey.jpeg",
+  "Princess Afia Nkrumah-Boateng": "/images/Headshots/Princess.jpg",
+  "Mildred Obeyaa Marfo": "/images/Headshots/Mildred.JPG",
+  "Maame Doudua": "/images/Headshots/Maame.jpg",
+  "Krishi Patel": "/images/Headshots/Krishi.jpg",
+  "Kwaku Marfo": "/images/Headshots/Marfo.jpg"
+};
 
 function getBioPreview(bio: string) {
   let normalized = bio.trim();
@@ -33,20 +44,32 @@ export function LeadershipMobileCard({
   member
 }: LeadershipMobileCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const preferredImage =
+    MOBILE_LEADERSHIP_HEADSHOTS[member.name] ?? member.image;
+  const [imageSrc, setImageSrc] = useState(preferredImage);
   const previewBio = getBioPreview(member.bio);
   const hasMoreBio = previewBio !== member.bio.trim();
 
+  useEffect(() => {
+    setImageSrc(preferredImage);
+  }, [preferredImage]);
+
   return (
     <article className="surface overflow-hidden">
-      <div className="relative aspect-[4/3] bg-slate-100">
+      <div className="bg-slate-100">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={member.image}
+          src={imageSrc}
           alt={`${member.photoType === "placeholder" ? "Profile placeholder" : "Headshot"} for ${member.name}`}
           loading="eager"
           fetchPriority="high"
           decoding="sync"
-          className="absolute inset-0 h-full w-full object-cover"
+          onError={() => {
+            if (imageSrc !== member.image) {
+              setImageSrc(member.image);
+            }
+          }}
+          className="block h-72 w-full object-cover"
         />
       </div>
 
