@@ -80,13 +80,7 @@ export function LeadershipMobileCard({
             className="inline-flex items-center gap-2 text-sm font-medium text-navy-700"
             aria-expanded={isExpanded}
           >
-            <span>
-              {isExpanded
-                ? "See less"
-                : hasMoreBio
-                  ? "See more"
-                  : "See headshot"}
-            </span>
+            <span>{isExpanded ? "See less" : "See more"}</span>
             <span aria-hidden="true">{isExpanded ? "↑" : "↓"}</span>
           </button>
         ) : null}
