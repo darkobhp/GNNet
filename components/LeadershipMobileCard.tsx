@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { TeamMember } from "@/data/site";
 
 type LeadershipMobileCardProps = {
@@ -46,32 +46,18 @@ export function LeadershipMobileCard({
   const [isExpanded, setIsExpanded] = useState(false);
   const preferredImage =
     MOBILE_LEADERSHIP_HEADSHOTS[member.name] ?? member.image;
-  const [imageSrc, setImageSrc] = useState(preferredImage);
+  const mobileImage = `${preferredImage}?v=lead-mobile-2`;
   const previewBio = getBioPreview(member.bio);
   const hasMoreBio = previewBio !== member.bio.trim();
 
-  useEffect(() => {
-    setImageSrc(preferredImage);
-  }, [preferredImage]);
-
   return (
     <article className="surface overflow-hidden">
-      <div className="bg-slate-100">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={imageSrc}
-          alt={`${member.photoType === "placeholder" ? "Profile placeholder" : "Headshot"} for ${member.name}`}
-          loading="eager"
-          fetchPriority="high"
-          decoding="sync"
-          onError={() => {
-            if (imageSrc !== member.image) {
-              setImageSrc(member.image);
-            }
-          }}
-          className="block h-72 w-full object-cover"
-        />
-      </div>
+      <div
+        role="img"
+        aria-label={`${member.photoType === "placeholder" ? "Profile placeholder" : "Headshot"} for ${member.name}`}
+        className="h-72 w-full bg-slate-100 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url("${mobileImage}")` }}
+      />
 
       <div className="space-y-3 p-5">
         <div className="space-y-1">
