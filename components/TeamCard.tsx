@@ -5,7 +5,6 @@ import type { TeamMember } from "@/data/site";
 
 type TeamCardProps = {
   member: TeamMember;
-  eagerImage?: boolean;
 };
 
 const SENTENCE_ABBREVIATIONS = ["Dr.", "Mr.", "Mrs.", "Ms.", "Prof."];
@@ -30,7 +29,7 @@ function getBioPreview(bio: string) {
   return preview.trim();
 }
 
-export function TeamCard({ member, eagerImage = false }: TeamCardProps) {
+export function TeamCard({ member }: TeamCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const previewBio = getBioPreview(member.bio);
   const hasMoreBio = previewBio !== member.bio.trim();
@@ -42,8 +41,8 @@ export function TeamCard({ member, eagerImage = false }: TeamCardProps) {
         <img
           src={member.image}
           alt={`${member.photoType === "placeholder" ? "Profile placeholder" : "Headshot"} for ${member.name}`}
-          loading={eagerImage ? "eager" : "lazy"}
-          fetchPriority={eagerImage ? "high" : "auto"}
+          loading="lazy"
+          fetchPriority="auto"
           decoding="async"
           className="media-lift absolute inset-0 h-full w-full object-cover"
         />

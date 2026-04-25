@@ -481,7 +481,7 @@ export const teamGroups: TeamGroup[] = [
       {
         name: "Bernice Limann",
         role: "President",
-        image: "/images/Headshots/Bernice.jpg",
+        image: "/images/Headshots/optimized/Bernice.jpg",
         photoType: "headshot",
         bio:
           "Bernice earned her medical degree at the University of Ghana Medical School. She is currently a house officer at Korle-Bu Teaching Hospital and seeks to pursue a career in neurosurgery."
@@ -489,7 +489,7 @@ export const teamGroups: TeamGroup[] = [
       {
         name: "Lois Agbemavi-Kudufia",
         role: "Vice Chair",
-        image: "/images/Headshots/Lois.jpg",
+        image: "/images/Headshots/optimized/Lois.jpg",
         photoType: "headshot",
         bio:
           "Lois is a fifth-year medical student at the University of Ghana Medical School and Co-Chair of the Ghana Neuroscience Network. She coordinates neuroscience research initiatives and collaborates with multidisciplinary teams. She has a strong interest in neurosurgery and is actively involved in research and academic activities within the field."
@@ -497,7 +497,7 @@ export const teamGroups: TeamGroup[] = [
       {
         name: "Kwadwo Darko",
         role: "Founder and Education Co-Lead",
-        image: "/images/Headshots/Kwadwo.jpg",
+        image: "/images/Headshots/optimized/Kwadwo.jpg",
         photoType: "headshot",
         bio:
           "Kwadwo earned his medical degree at the University of Ghana Medical School."
@@ -505,7 +505,7 @@ export const teamGroups: TeamGroup[] = [
       {
         name: "Michael Yankey",
         role: "Statistics Lead",
-        image: "/images/Headshots/Yankey.jpeg",
+        image: "/images/Headshots/optimized/Yankey.jpg",
         photoType: "headshot",
         bio:
           "Michael obtained his medical degree from the University of Ghana Medical School after previously completing his undergraduate studies. He is a master's student in biostatistics and has interests in neurosurgery and neuropathology."
@@ -513,7 +513,7 @@ export const teamGroups: TeamGroup[] = [
       {
         name: "Princess Afia Nkrumah-Boateng",
         role: "Statistics Co-Lead",
-        image: "/images/Headshots/Princess.jpg",
+        image: "/images/Headshots/optimized/Princess.jpg",
         photoType: "headshot",
         bio:
           "Princess Afia Nkrumah-Boateng is a fifth-year medical student at the University of Ghana Medical School. She has a profound passion for neuroscience and leadership."
@@ -521,7 +521,7 @@ export const teamGroups: TeamGroup[] = [
       {
         name: "Mildred Obeyaa Marfo",
         role: "Education Lead",
-        image: "/images/Headshots/Mildred.JPG",
+        image: "/images/Headshots/optimized/Mildred.jpg",
         photoType: "headshot",
         bio:
           "Mildred earned her medical degree at the University of Development Studies. She is currently a senior house officer at Achimota Hospital in Accra, Ghana. She has a growing interest in pediatric neurosurgery and hopes to pursue formal training in the field. Her clinical and research interests are broadly centered on neurosurgery, with a focus on improving care for children. She has been involved in research exploring neurosurgical care and outcomes in Ghana. Mildred is a member of the International Society for Pediatric Neurosurgery. She is also interested in global neurosurgery and advancing access to safe and timely neurosurgical care in Ghana. Through her work, she aims to contribute to strengthening neurosurgical systems and expanding care for children in underserved communities."
@@ -529,7 +529,7 @@ export const teamGroups: TeamGroup[] = [
       {
         name: "Maame Doudua",
         role: "Research Lead",
-        image: "/images/Headshots/Maame.jpg",
+        image: "/images/Headshots/optimized/Maame.jpg",
         photoType: "headshot",
         bio:
           "Maame earned her medical degree at the Accra College of Medicine. She is an aspiring neurosurgeon with an interest in neuroscience research, specifically functional neurosurgery. She aims to contribute to research that improves current practice and treatment outcomes."
@@ -537,7 +537,7 @@ export const teamGroups: TeamGroup[] = [
       {
         name: "Krishi Patel",
         role: "Research Co-Lead",
-        image: "/images/Headshots/Krishi.jpg",
+        image: "/images/Headshots/optimized/Krishi.jpg",
         photoType: "headshot",
         bio:
           "Krishi is a fourth-year medical student at the University of Ghana Medical School. She is curious about how the brain shapes who we are and how disease can alter that. She is also drawn to the intersection of neurology, psychology, and neuropsychology."
@@ -545,7 +545,7 @@ export const teamGroups: TeamGroup[] = [
       {
         name: "Kwaku Marfo",
         role: "Research Co-Lead",
-        image: "/images/Headshots/Marfo.jpg",
+        image: "/images/Headshots/optimized/Marfo.jpg",
         photoType: "headshot",
         bio:
           "Kwaku is a fourth-year medical student at the University of Ghana Medical School. He has a keen interest in neuroscience and its many disciplines. His goals are to one day advance neurosurgical and neurological techniques and to simplify complex concepts, making them more accessible and less abstruse."
