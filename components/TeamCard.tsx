@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 import type { TeamMember } from "@/data/site";
 
@@ -39,14 +38,14 @@ export function TeamCard({ member, eagerImage = false }: TeamCardProps) {
   return (
     <article className="group surface surface-interactive flex h-full flex-col overflow-hidden">
       <div className="relative aspect-[4/4.2] border-b border-slate-200 bg-slate-100">
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src={member.image}
           alt={`${member.photoType === "placeholder" ? "Profile placeholder" : "Headshot"} for ${member.name}`}
-          width={900}
-          height={945}
           loading={eagerImage ? "eager" : "lazy"}
-          className="media-lift h-full w-full object-cover"
-          sizes="(min-width: 1280px) 22vw, (min-width: 768px) 44vw, 100vw"
+          fetchPriority={eagerImage ? "high" : "auto"}
+          decoding="async"
+          className="media-lift absolute inset-0 h-full w-full object-cover"
         />
       </div>
 
