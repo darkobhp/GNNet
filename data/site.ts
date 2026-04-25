@@ -484,7 +484,7 @@ export const teamGroups: TeamGroup[] = [
         image: "/images/Headshots/Bernice.jpg",
         photoType: "headshot",
         bio:
-          "Bernice earned her medical degree at the University of Ghana Medical School. She is currently a house officer at Korle-Bu Teaching Hospital and is pursuing a career in neurosurgery."
+          "Bernice earned her medical degree at the University of Ghana Medical School. She is currently a house officer at Korle-Bu Teaching Hospital and seeks to pursue a career in neurosurgery."
       },
       {
         name: "Lois Agbemavi-Kudufia",
@@ -492,7 +492,7 @@ export const teamGroups: TeamGroup[] = [
         image: "/images/Headshots/Lois.jpg",
         photoType: "headshot",
         bio:
-          "Lois is a final-year medical student at the University of Ghana Medical School with a strong interest in neurosurgery. She is deeply engaged in neuroscience and research and aspires to build a rewarding career in academic surgery."
+          "Lois is a fifth-year medical student at the University of Ghana Medical School and Co-Chair of the Ghana Neuroscience Network, where she coordinates neuroscience research initiatives and collaborates with multidisciplinary teams. She has a strong interest in neurosurgery and is actively involved in research and academic activities within the field."
       },
       {
         name: "Kwadwo Darko",
@@ -505,10 +505,10 @@ export const teamGroups: TeamGroup[] = [
       {
         name: "Michael Yankey",
         role: "Statistics Lead",
-        image: "/images/placeholders/michael-yankey.svg",
-        photoType: "placeholder",
+        image: "/images/Headshots/Yankey.jpeg",
+        photoType: "headshot",
         bio:
-          "Michael obtained his medical degree from the University of Ghana Medical School after previously completing his undergraduate studies. He is currently practicing as a medical officer and intends to start his neurosurgery residency in 2026."
+          "Michael obtained his medical degree from the University of Ghana Medical School after previously completing his undergraduate studies. He is a master's student in biostatistics and has interests in neurosurgery and neuropathology."
       },
       {
         name: "Princess Afia Nkrumah-Boateng",
@@ -516,7 +516,7 @@ export const teamGroups: TeamGroup[] = [
         image: "/images/Headshots/Princess.jpg",
         photoType: "headshot",
         bio:
-          "Princess is a fifth-year medical student at the University of Ghana Medical School. She is an aspiring neurosurgeon who is passionate about research, neuroscience, and a future in academic medicine."
+          "Princess Afia Nkrumah-Boateng is a fifth-year medical student at the University of Ghana Medical School. She has a profound passion for neuroscience and leadership."
       },
       {
         name: "Mildred Obeyaa Marfo",
@@ -524,7 +524,7 @@ export const teamGroups: TeamGroup[] = [
         image: "/images/Headshots/Mildred.JPG",
         photoType: "headshot",
         bio:
-          "Mildred earned her medical degree at the University of Development Studies. She is currently a house officer at Achimota Hospital and is pursuing a career in neurosurgery."
+          "Mildred earned her medical degree at the University of Development Studies. She is currently a senior house officer at Achimota Hospital in Accra, Ghana. She has a growing interest in pediatric neurosurgery and hopes to pursue formal training in the field. Her clinical and research interests are broadly centered on neurosurgery, with a focus on improving care for children. She has been involved in research exploring neurosurgical care and outcomes in Ghana. Mildred is a member of the International Society for Pediatric Neurosurgery and is also interested in global neurosurgery and advancing access to safe and timely neurosurgical care in Ghana."
       },
       {
         name: "Maame Doudua",
@@ -532,7 +532,7 @@ export const teamGroups: TeamGroup[] = [
         image: "/images/Headshots/Maame.jpg",
         photoType: "headshot",
         bio:
-          "Maame earned her medical degree at the Accra College of Medicine. She is currently a house officer at Korle-Bu Teaching Hospital and is pursuing a career in neurosurgery."
+          "Maame earned her medical degree at the Accra College of Medicine. She is an aspiring neurosurgeon with an interest in neuroscience research, specifically functional neurosurgery. She aims to contribute to research that improves current practice and treatment outcomes."
       },
       {
         name: "Krishi Patel",
@@ -540,7 +540,7 @@ export const teamGroups: TeamGroup[] = [
         image: "/images/Headshots/Krishi.jpg",
         photoType: "headshot",
         bio:
-          "Krishi is a fourth-year medical student at the University of Ghana Medical School. She aims to pursue a career in neurosurgery, with a strong enthusiasm for neuroscience and research, and is committed to developing a meaningful path in academic medicine."
+          "Krishi is a fourth-year medical student at the University of Ghana Medical School. She is curious about how the brain shapes who we are and how disease can alter that. She is also drawn to the intersection of neurology, psychology, and neuropsychology."
       },
       {
         name: "Kwaku Marfo",
@@ -548,7 +548,7 @@ export const teamGroups: TeamGroup[] = [
         image: "/images/Headshots/Marfo.jpg",
         photoType: "headshot",
         bio:
-          "Kwaku is a fourth-year medical student at the University of Ghana Medical School. With a strong enthusiasm for neuroscience and research, Kwaku aims to pursue a career in neurosurgery and develop a meaningful path in academic medicine."
+          "Kwaku is a fourth-year medical student at the University of Ghana Medical School. He has a keen interest in neuroscience and its many disciplines. His goals are to one day advance neurosurgical and neurological techniques and to simplify complex concepts, making them more accessible."
       }
     ]
   },
@@ -561,7 +561,7 @@ export const teamGroups: TeamGroup[] = [
         image: "/images/Headshots/Mabel.jpg",
         photoType: "headshot",
         bio:
-          "Dr. Banson is Ghana's first female neurosurgeon and a consultant at Korle-Bu Teaching Hospital, where she also lectures part-time at the University of Ghana Medical School. Her practice focuses on minimally invasive and keyhole neurosurgery, interventional pain management, neuro-oncology, pediatric neurosurgery, and neuroendoscopy, alongside research and mentorship."
+          "Dr. Banson is Ghana's first female neurosurgeon and a consultant at Korle-Bu Teaching Hospital, where she also lectures part-time at the University of Ghana Medical School. Her practice focuses on minimally invasive and keyhole neurosurgery, as well as interventional pain management, with additional interests in neuro-oncology, pediatric neurosurgery, and neuroendoscopy. Her work emphasizes advancing neurosurgical care and training in Ghana, alongside research and mentorship in areas including neurotrauma, implant infections, and congenital conditions."
       },
       {
         name: "Patrick Bankah",
@@ -569,7 +569,7 @@ export const teamGroups: TeamGroup[] = [
         image: "/images/Headshots/Bankah.jpg",
         photoType: "headshot",
         bio:
-          "Dr. Bankah earned his medical degree from the University of Ghana and completed neurosurgical residency at Korle-Bu Teaching Hospital in Accra. He subsequently undertook fellowship training in pediatric neurosurgery at Johns Hopkins Hospital and now practices as a consultant neurosurgeon at Korle-Bu while contributing to undergraduate and postgraduate neurosurgical training."
+          "Dr. Bankah earned his medical degree from the University of Ghana and completed neurosurgical residency at Korle-Bu Teaching Hospital in Accra. He subsequently undertook fellowship training in pediatric neurosurgery at Johns Hopkins Hospital and now practices as a consultant neurosurgeon at Korle-Bu. He contributes to both undergraduate medical education and postgraduate neurosurgical training through the University of Ghana School of Medicine and Dentistry and the West African College of Surgeons."
       },
       {
         name: "Dodi Hadi Abdullah",
@@ -589,31 +589,28 @@ export const teamGroups: TeamGroup[] = [
         image: "/images/Headshots/Emmanuel.jpg",
         photoType: "headshot",
         bio:
-          "Dr. Adjei is a junior neurosurgery resident in the Neurosurgery Department of Korle-Bu Teaching Hospital. He is particularly interested in advocacy, preventive health strategies, artificial intelligence in neuroscience, and strengthening healthcare systems."
+          "Dr. Adjei is a junior neurosurgery resident at the Neurosurgery Department of Korle-Bu Teaching Hospital. He is driven by a strong belief that quality healthcare is essential for individuals to achieve their full potential, which underpins his commitment to patient care. He is particularly interested in advocacy and preventive health strategies, with a growing focus on artificial intelligence in neuroscience and improving healthcare systems."
       },
       {
         name: "Simon Sackitey",
         role: "Junior Neurosurgery Resident",
         image: "/images/Headshots/Simon.png",
         photoType: "headshot",
-        bio:
-          "Dr. Sackitey is a junior neurosurgery resident at the Neurosurgery Department of Korle-Bu Teaching Hospital."
+        bio: "Dr. Sackitey is a junior neurosurgery resident at the Neurosurgery Department of Korle-Bu Teaching Hospital."
       },
       {
         name: "Irene Kweidjartey",
         role: "Junior Neurosurgery Resident",
         image: "/images/placeholders/irene-kweidjartey.svg",
         photoType: "placeholder",
-        bio:
-          "Dr. Kweidjartey is a junior neurosurgery resident at the Neurosurgery Department of Korle-Bu Teaching Hospital."
+        bio: "Dr. Kweidjartey is a junior neurosurgery resident at the Neurosurgery Department of Korle-Bu Teaching Hospital."
       },
       {
         name: "Omane Okrah Acheampong",
         role: "Senior Neurosurgery Resident",
         image: "/images/Headshots/Omane Okrah.jpg",
         photoType: "headshot",
-        bio:
-          "Dr. Okrah is a senior neurosurgery resident at the Neurosurgery Department of Korle-Bu Teaching Hospital."
+        bio: "Dr. Okrah is a senior neurosurgery resident at the Neurosurgery Department of Korle-Bu Teaching Hospital."
       }
     ]
   }
