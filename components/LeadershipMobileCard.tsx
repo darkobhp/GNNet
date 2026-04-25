@@ -17,7 +17,13 @@ const MOBILE_LEADERSHIP_HEADSHOTS: Record<string, string> = {
   "Mildred Obeyaa Marfo": "/images/Headshots/Mildred.JPG",
   "Maame Doudua": "/images/Headshots/Maame.jpg",
   "Krishi Patel": "/images/Headshots/Krishi.jpg",
-  "Kwaku Marfo": "/images/Headshots/Marfo.jpg"
+  "Kwaku Marfo": "/images/Headshots/Marfo.jpg",
+  "Mabel Banson": "/images/Headshots/Mabel.jpg",
+  "Patrick Bankah": "/images/Headshots/Bankah.jpg",
+  "Dodi Hadi Abdullah": "/images/Headshots/Dr.-Hadi-Abdullah.jpg",
+  "Emmanuel Kwadwo Osei Adjei": "/images/Headshots/Emmanuel.jpg",
+  "Simon Sackitey": "/images/Headshots/Simon.png",
+  "Omane Okrah Acheampong": "/images/Headshots/Omane Okrah.jpg"
 };
 
 function getBioPreview(bio: string) {
@@ -49,6 +55,7 @@ export function LeadershipMobileCard({
   const mobileImage = `${preferredImage}?v=lead-mobile-3`;
   const previewBio = getBioPreview(member.bio);
   const hasMoreBio = previewBio !== member.bio.trim();
+  const canExpand = Boolean(preferredImage);
 
   return (
     <article className="surface p-5">
@@ -66,14 +73,20 @@ export function LeadershipMobileCard({
           {isExpanded ? member.bio : previewBio}
         </p>
 
-        {hasMoreBio ? (
+        {canExpand ? (
           <button
             type="button"
             onClick={() => setIsExpanded((current) => !current)}
             className="inline-flex items-center gap-2 text-sm font-medium text-navy-700"
             aria-expanded={isExpanded}
           >
-            <span>{isExpanded ? "See less" : "See more"}</span>
+            <span>
+              {isExpanded
+                ? "See less"
+                : hasMoreBio
+                  ? "See more"
+                  : "See headshot"}
+            </span>
             <span aria-hidden="true">{isExpanded ? "↑" : "↓"}</span>
           </button>
         ) : null}
