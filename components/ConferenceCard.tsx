@@ -7,7 +7,7 @@ type ConferenceCardProps = {
 };
 
 export function ConferenceCard({ conference }: ConferenceCardProps) {
-  const previewPresentations = conference.presentations.slice(0, 2);
+  const previewPresentations = conference.presentations.slice(0, 1);
 
   return (
     <article className="group surface surface-interactive overflow-hidden">
@@ -39,7 +39,7 @@ export function ConferenceCard({ conference }: ConferenceCardProps) {
 
         <div className="rounded-2xl border border-slate-200 bg-slate-50/80 p-4 motion-safe:transition-colors motion-safe:duration-500 group-hover:border-slate-300 group-hover:bg-white">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-            Presentation Preview
+            Abstract Preview
           </p>
           <ul className="mt-3 space-y-3">
             {previewPresentations.map((presentation) => (
@@ -50,11 +50,7 @@ export function ConferenceCard({ conference }: ConferenceCardProps) {
           </ul>
           {conference.presentations.length > previewPresentations.length ? (
             <p className="mt-3 text-sm text-slate-500">
-              +{conference.presentations.length - previewPresentations.length} more
-              presentation
-              {conference.presentations.length - previewPresentations.length === 1
-                ? ""
-                : "s"}
+              Open the conference page to view the remaining abstracts.
             </p>
           ) : null}
         </div>

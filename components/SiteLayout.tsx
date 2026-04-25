@@ -7,11 +7,10 @@ type SiteLayoutProps = {
 
 export function SiteLayout({ children }: SiteLayoutProps) {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-clip">
       <Navbar />
-      <main>{children}</main>
+      <main className="overflow-x-clip">{children}</main>
       <Footer />
     </div>
   );
 }
-

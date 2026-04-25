@@ -492,7 +492,7 @@ export const teamGroups: TeamGroup[] = [
         image: "/images/Headshots/Lois.jpg",
         photoType: "headshot",
         bio:
-          "Lois is a fifth-year medical student at the University of Ghana Medical School and Co-Chair of the Ghana Neuroscience Network, where she coordinates neuroscience research initiatives and collaborates with multidisciplinary teams. She has a strong interest in neurosurgery and is actively involved in research and academic activities within the field."
+          "Lois is a fifth-year medical student at the University of Ghana Medical School and Co-Chair of the Ghana Neuroscience Network. She coordinates neuroscience research initiatives and collaborates with multidisciplinary teams. She has a strong interest in neurosurgery and is actively involved in research and academic activities within the field."
       },
       {
         name: "Kwadwo Darko",
@@ -524,7 +524,7 @@ export const teamGroups: TeamGroup[] = [
         image: "/images/Headshots/Mildred.JPG",
         photoType: "headshot",
         bio:
-          "Mildred earned her medical degree at the University of Development Studies. She is currently a senior house officer at Achimota Hospital in Accra, Ghana. She has a growing interest in pediatric neurosurgery and hopes to pursue formal training in the field. Her clinical and research interests are broadly centered on neurosurgery, with a focus on improving care for children. She has been involved in research exploring neurosurgical care and outcomes in Ghana. Mildred is a member of the International Society for Pediatric Neurosurgery and is also interested in global neurosurgery and advancing access to safe and timely neurosurgical care in Ghana."
+          "Mildred earned her medical degree at the University of Development Studies. She is currently a senior house officer at Achimota Hospital in Accra, Ghana. She has a growing interest in pediatric neurosurgery and hopes to pursue formal training in the field. Her clinical and research interests are broadly centered on neurosurgery, with a focus on improving care for children. She has been involved in research exploring neurosurgical care and outcomes in Ghana. Mildred is a member of the International Society for Pediatric Neurosurgery. She is also interested in global neurosurgery and advancing access to safe and timely neurosurgical care in Ghana. Through her work, she aims to contribute to strengthening neurosurgical systems and expanding care for children in underserved communities."
       },
       {
         name: "Maame Doudua",
@@ -548,7 +548,7 @@ export const teamGroups: TeamGroup[] = [
         image: "/images/Headshots/Marfo.jpg",
         photoType: "headshot",
         bio:
-          "Kwaku is a fourth-year medical student at the University of Ghana Medical School. He has a keen interest in neuroscience and its many disciplines. His goals are to one day advance neurosurgical and neurological techniques and to simplify complex concepts, making them more accessible."
+          "Kwaku is a fourth-year medical student at the University of Ghana Medical School. He has a keen interest in neuroscience and its many disciplines. His goals are to one day advance neurosurgical and neurological techniques and to simplify complex concepts, making them more accessible and less abstruse."
       }
     ]
   },
@@ -589,7 +589,7 @@ export const teamGroups: TeamGroup[] = [
         image: "/images/Headshots/Emmanuel.jpg",
         photoType: "headshot",
         bio:
-          "Dr. Adjei is a junior neurosurgery resident at the Neurosurgery Department of Korle-Bu Teaching Hospital. He is driven by a strong belief that quality healthcare is essential for individuals to achieve their full potential, which underpins his commitment to patient care. He is particularly interested in advocacy and preventive health strategies, with a growing focus on artificial intelligence in neuroscience and improving healthcare systems."
+          "Dr. Adjei is a junior neurosurgery resident at the Neurosurgery Department of Korle-Bu Teaching Hospital. He is driven by a strong belief that quality healthcare is essential for individuals to achieve their full potential, which underpins his commitment to patient care. He is particularly interested in advocacy and preventive health strategies, and has a growing focus on the application of artificial intelligence in neuroscience, as well as efforts to study and improve healthcare systems."
       },
       {
         name: "Simon Sackitey",

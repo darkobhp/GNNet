@@ -10,10 +10,10 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-md">
-      <div className="shell flex min-h-[4.75rem] items-center justify-between gap-6">
+      <div className="shell flex min-h-[4.75rem] items-center justify-between gap-3 sm:gap-6">
         <Link
           href="#about"
-          className="group flex items-center gap-3 text-slate-900"
+          className="group flex min-w-0 flex-1 items-center gap-3 text-slate-900 md:flex-none"
           aria-label="GNNet Research home"
         >
           <span className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
@@ -26,11 +26,11 @@ export function Navbar() {
               priority
             />
           </span>
-          <span className="flex flex-col">
-            <span className="text-base font-bold uppercase tracking-[0.22em] text-slate-700 sm:text-lg">
+          <span className="flex min-w-0 flex-col">
+            <span className="text-sm font-bold uppercase tracking-[0.18em] text-slate-700 sm:text-lg sm:tracking-[0.22em]">
               GNNET
             </span>
-            <span className="text-lg font-normal text-slate-900 group-hover:text-navy-800">
+            <span className="truncate text-sm font-normal leading-tight text-slate-900 group-hover:text-navy-800 sm:text-lg">
               Ghana Neuroscience Network
             </span>
           </span>
@@ -69,7 +69,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-3 text-slate-700 hover:border-slate-300 hover:text-slate-900 md:hidden"
+          className="inline-flex shrink-0 items-center justify-center rounded-2xl border border-slate-200 bg-white p-3 text-slate-700 hover:border-slate-300 hover:text-slate-900 md:hidden"
           onClick={() => setIsOpen((value) => !value)}
           aria-expanded={isOpen}
           aria-controls="mobile-menu"
