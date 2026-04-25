@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 
 const MAX_FILE_SIZE_BYTES = 5 * 1024 * 1024;
+const DEFAULT_APPS_SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbzPCNWUlmVh8cfffShkF3tMCCSM_mBmIijXvR7NoCkT_ZNQJ-D3Dzybw16w6CVvkzXF5g/exec";
 
 function getString(formData: FormData, key: string) {
   const value = formData.get(key);
@@ -8,13 +10,14 @@ function getString(formData: FormData, key: string) {
 }
 
 export async function POST(request: Request) {
-  const appsScriptUrl = process.env.GOOGLE_APPS_SCRIPT_URL;
+  const appsScriptUrl =
+    process.env.GOOGLE_APPS_SCRIPT_URL || DEFAULT_APPS_SCRIPT_URL;
 
   if (!appsScriptUrl) {
     return NextResponse.json(
       {
         error:
-          "Application backend is not configured yet. Add GOOGLE_APPS_SCRIPT_URL to .env.local."
+          "Application backend is not configured yet. Set GOOGLE_APPS_SCRIPT_URL in your deployment environment, or add it to .env.local when running locally."
       },
       { status: 500 }
     );
