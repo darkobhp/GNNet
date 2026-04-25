@@ -2,6 +2,7 @@ import { ConferenceCard } from "@/components/ConferenceCard";
 import { ConnectForm } from "@/components/ConnectForm";
 import { Hero } from "@/components/Hero";
 import { InfoCard } from "@/components/InfoCard";
+import { LeadershipMobileCard } from "@/components/LeadershipMobileCard";
 import { PublicationCard } from "@/components/PublicationCard";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -173,17 +174,42 @@ export default function HomePage() {
                   <div className="h-px flex-1 bg-slate-200" />
                 </div>
 
-                <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-                  {group.members.map((member, index) => (
-                    <Reveal
-                      key={member.name}
-                      delay={(index % 4) * 80}
-                      className="h-full"
-                    >
-                      <TeamCard member={member} />
-                    </Reveal>
-                  ))}
-                </div>
+                {group.name === "Leadership" ? (
+                  <>
+                    <div className="space-y-5 md:hidden">
+                      {group.members.map((member) => (
+                        <LeadershipMobileCard
+                          key={member.name}
+                          member={member}
+                        />
+                      ))}
+                    </div>
+
+                    <div className="hidden gap-6 md:grid md:grid-cols-2 xl:grid-cols-4">
+                      {group.members.map((member, index) => (
+                        <Reveal
+                          key={member.name}
+                          delay={(index % 4) * 80}
+                          className="h-full"
+                        >
+                          <TeamCard member={member} />
+                        </Reveal>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+                    {group.members.map((member, index) => (
+                      <Reveal
+                        key={member.name}
+                        delay={(index % 4) * 80}
+                        className="h-full"
+                      >
+                        <TeamCard member={member} />
+                      </Reveal>
+                    ))}
+                  </div>
+                )}
               </Reveal>
             ))}
           </div>
